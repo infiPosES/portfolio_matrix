@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./calculator.css" type="text/css">
+		<script src="./calculator.js"  charset="utf-8"></script>
+		<title>행렬 계산기</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="matrixTitle">행렬계산기</h1>
+		</header>
+		<!--행렬 생성-->
+		<form class="makeMatrix" name="makeMatrix" method="post">
+			<fieldset class="makeMatrixArea">
+				<label for="matrixAX">행렬 A의 행:  <input class="matrix matrixAX" name="matrixAX" type="number" min="1" max="10" value="2"></label>
+				<label for="matrixAY"> 열:  <input class="matrix matrixAY" name="matrixAY" type="number" min="1" max="10" value="2"></label>
+				<label for="matrixBX">행렬 B의 행:  <input class="matrix matrixBX" name="matrixBX" type="number" min="1" max="10" value="2"></label>
+				<label for="matrixBY"> 열:  <input class="matrix matrixBY" name="matrixBY" type="number" min="1" max="10" value="2"></label>
+				<input class="btn makeBtn" id="makeMatrixBtn" value="행렬 생성" type="button">
+			</fieldset>
+		</form>
+		<!--생성된 행렬 나오는 박스-->
+		<section class="madeMatrix" id="madeMatrix"></section>
+		<!--버튼 박스-->
+		<nav class="buttonBox" id="buttonBox">
+			<button class="btn plusAB" id="plusAB">A+B</button>
+			<button class="btn minusAB" id="minusAB">A-B</button>
+			<button class="btn multiAB" id="multiAB">AB</button>
+			<button class="btn randomAB" id="randomAB">Random</button>
+		</nav>
+		<!--계산 값 나오는 결과 박스-->
+		<section class="resultBox" id="resultBox"></section>
+		<div class="alertBox" id="alertBox">
+			<div class="inAlertBox" id="inAlertBox"></div>
+			<button class="closeAlert" id="closeAlert">닫기</button>
+		</div>
+		<!--footer-->
+		<footer></footer>
+	</body>
+</html>

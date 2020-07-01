@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* css reset */
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/* color */
+/* border */
+/* button design */
+/* 값 입력, 출력 나타내는 박스 */
+html, body {
+  width: 100%;
+  min-width: 650px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #32435f;
+  background-color: #fafafa; }
+
+/*행렬계산기 타이틀*/
+header .matrixTitle {
+  height: 100px;
+  margin: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 98px;
+  letter-spacing: 1px;
+  font-size: 50px;
+  color: #4d72e0; }
+
+/*행렬 생성*/
+.makeMatrix {
+  text-align: center; }
+  .makeMatrix fieldset {
+    border: none;
+    /*input 입력박스*/ }
+    .makeMatrix fieldset label {
+      font-size: 20px;
+      line-height: 46px; }
+    .makeMatrix fieldset label:nth-child(2n-1) {
+      margin-left: 20px; }
+    .makeMatrix fieldset .matrix {
+      width: 50px;
+      height: 50px;
+      margin: 1px;
+      border: none;
+      text-align: right;
+      line-height: 50px;
+      font-size: 18px;
+      border: 1px solid #aaa;
+      box-sizing: border-box; }
+    .makeMatrix fieldset .makeBtn {
+      width: 100px;
+      height: 50px;
+      margin-left: 20px;
+      border: none;
+      outline: none;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      border: 1px solid #4d72e0;
+      box-sizing: border-box;
+      border-radius: 15px;
+      color: #4d72e0;
+      background-color: #fafafa;
+      transition: all linear 0.2s;
+      cursor: pointer;
+      margin-left: 18px;
+      line-height: 46px; }
+
+/*생성된 행렬 나오는 박스*/
+.madeMatrix {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center; }
+  .madeMatrix .inMatrixBox {
+    display: inline-block;
+    margin-left: 50px; }
+    .madeMatrix .inMatrixBox .inMatrixValue {
+      width: 50px;
+      height: 50px;
+      margin: 1px;
+      border: none;
+      text-align: right;
+      line-height: 50px;
+      font-size: 18px;
+      border: 1px solid #aaa;
+      box-sizing: border-box; }
+  .madeMatrix .inMatrixBox:nth-child(1) {
+    margin-left: 0px; }
+
+/*버튼 박스*/
+.buttonBox {
+  display: none;
+  margin: auto;
+  margin-bottom: 50px;
+  text-align: center; }
+  .buttonBox .btn {
+    width: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #4d72e0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    color: #4d72e0;
+    background-color: #fafafa;
+    transition: all linear 0.2s;
+    cursor: pointer; }
+  .buttonBox .btn:nth-child(1) {
+    margin-left: 0px; }
+  .buttonBox .btn:hover {
+    background-color: #4d72e0;
+    border: 1px solid #4d72e0;
+    box-sizing: border-box;
+    color: #fafafa; }
+
+/*resultBox*/
+.resultBox {
+  width: 100%;
+  text-align: center; }
+  .resultBox .inResultBox {
+    display: inline-block; }
+    .resultBox .inResultBox .inResultM {
+      width: 50px;
+      height: 50px;
+      margin: 1px;
+      border: none;
+      text-align: right;
+      line-height: 50px;
+      font-size: 18px;
+      border: 1px solid #aaa;
+      box-sizing: border-box;
+      width: 60px;
+      height: 50px;
+      padding-right: 5px;
+      float: left; }
+    .resultBox .inResultBox .inResultM::after {
+      clear: both; }
+
+/*alertBox*/
+.alertBox {
+  width: 600px;
+  height: 200px;
+  border-radius: 30px;
+  position: absolute;
+  top: 45px;
+  left: calc(50% - 300px);
+  display: none;
+  text-align: center;
+  letter-spacing: 1px;
+  box-shadow: 0px 0px 10px #ccc;
+  background-color: #fafafa;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  /*알림창 닫기 버튼*/ }
+  .alertBox .inAlertBox {
+    width: 100%;
+    height: 120px;
+    text-align: left;
+    letter-spacing: 1px;
+    padding: 20px;
+    box-sizing: border-box; }
+  .alertBox .closeAlert {
+    position: absolute;
+    top: 140px;
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 38px;
+    transition: all linear 0.2s;
+    border: 1px solid #4d72e0;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    color: #4d72e0;
+    cursor: pointer; }
+  .alertBox .closeAlert:hover {
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    border: 1px solid #92ff00;
+    box-sizing: border-box;
+    background-color: #92ff00;
+    color: white; }
+
+/* footer */
+footer {
+  height: 100px; }
+
+/*# sourceMappingURL=calculator.css.map */
